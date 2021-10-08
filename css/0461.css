@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+header {
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+
+}
+header div {
+    width: 1200px;
+    margin: 0 auto;
+}
+header div::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+header div h1 {
+    float: left;
+}
+header div nav {
+    float: right;
+}
+header div nav ul li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.main_visual {
+    height: 700px;
+    background: url('../img/flower.JPG') center center / cover no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+.main_visual div {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.main_visual div p:first-child {
+    font-size: 50px;
+    letter-spacing: 10px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+.main_visual div p:nth-child(2) {
+    width: 300px;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 auto;
+    border: 2px solid #fff;
+}
+.main_visual div a {
+    color: #fff;
+}
+
+.cont01 {
+    width: 1400px;
+    margin: 100px auto;
+}
+.cont01::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+h3 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.cont01 article {
+    width: 320px;
+    border: 1px solid #000;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+}
+.cont01 article img {
+    width: 100%;
+    height: 280px;
+    display: block;
+}
+.cont01 article:hover img {
+    transform: scale(1.5);
+}
+.cont01 article dl {
+    padding: 30px;
+}
+.cont01 article dl dt {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.cont02 {
+    background-color: cornflowerblue;
+    padding: 100px 0;
+    color: #fff;
+    text-align: center;
+}
+.cont02 article {
+    width: 360px;
+    display: inline-block;
+    padding: 50px;
+}
+.cont02 article a img {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: .8s;
+}
+.cont02 article a p {
+    margin-top: 30px;
+    color: #fff;
+}
+.cont02 article:hover img {
+    transform: rotateY(360deg);
+}
+footer {
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color: wheat;
+}

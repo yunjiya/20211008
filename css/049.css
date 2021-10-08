@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0;}
+legend {
+    position: absolute;
+    left: -9999px;
+}
+fieldset {
+    border: 0;
+}
+.wrap {
+    width: 600px;
+    border: 1px solid #333;
+    margin: 50px auto;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.wrap form div {
+    margin: 5px 0;
+}
+.wrap form label {
+    width: 150px;
+    text-align: right;
+    display: inline-block;
+    vertical-align: middle;
+}
+.wrap form input[type="text"],
+.wrap form input[type="password"] {
+    width: 300px;
+    height: 30px;
+    border: 1px solid #333;
+    box-sizing: border-box;
+}
+input[type="button"] {
+    width: 300px;
+    height: 30px;
+    background-color: red;
+    border: 0;
+    color: #fff;
+    margin: 5px 0;
+}
+.wrap .addr input[type="text"] {
+    margin-left: 156px;
+}
+textarea {
+    width: 300px;
+    height: 150px;
+    resize: none;
+    vertical-align: middle;
+}
+select {
+    width: 200px;
+    height: 40px;
+}
+.btn {   
+    text-align: center;
+    margin-top: 50px !important;
+}
+.btn input[type="reset"] {
+    width: 120px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #333;
+}
+.btn input[type="submit"] {
+    width: 120px;
+    height: 40px;
+    background-color: royalblue;
+    color: #fff;
+    border: 1px solid royalblue;
+}

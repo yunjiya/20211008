@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+body {
+    background-color: #eee;
+    padding: 100px 0;
+}
+.wrap {
+    width: 1400px;
+    /* background-color: antiquewhite; */
+    margin: 0 auto;
+}
+.wrap .top {
+    border-bottom: 1px solid #333;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
+.wrap .top h2 {
+    font-size: 40px;
+    text-align: center;
+}
+.wrap .top p {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #555;
+}
+.wrap .top dl {
+    text-align: center;
+}
+.wrap .top dl dt {
+    text-align: center;
+    font-size: 80px;
+    margin-top: 50px;
+    display: inline-block;
+    position: relative;
+    /* border-bottom: 50px solid yellow;
+    display: inline-block; */
+}
+.wrap .top dl dt::before {
+    content: '';
+    width: 100%;
+    height: 20px;
+    background-color: yellow;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    padding: 0 20px;
+}
+.wrap .top dl dd {
+    text-align: left;
+    font-size: 20px;
+}
+
+.wrap .top .btn {
+    width: 0;
+    margin-top: 30px;
+    font-size: 18px;
+    transition: .5s ease-in-out;
+}
+.wrap .top .btn a {
+    width: 220px;
+    height: 60px;
+    line-height: 60px;
+    border: 1px solid #333;
+    text-align: center;
+    box-sizing: border-box;
+}
+.wrap .top .btn:hover {
+    width: 220px;
+    background-color: #333;
+}
+.wrap .top .btn:hover a {
+    color: #fff;
+}
+
+.wrap .bottom h3 {
+    font-size: 60px;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+}
+.wrap .bottom h3::before {
+    content: '';
+    width: 100%;
+    height: 20px;
+    background-color: yellow;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    z-index: -1;
+    padding: 0 20px;
+}
+.wrap .bottom ul {
+    margin-left: 150px;
+}
+.wrap .bottom ul li {
+    margin-bottom: 20px;
+}
+.wrap .bottom a {
+    display: inline-block;
+}
+.wrap .bottom .fas {
+    font-size: 30px;
+    background-color: #111;
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 80px;
+    margin-right: 20px;
+}

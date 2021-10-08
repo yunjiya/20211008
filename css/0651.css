@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+header {
+    width: 1200px;
+    margin: 0 auto;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+header h1 {
+    float: left;
+}
+header nav {
+    display: inline-block;
+}
+header nav ul li {
+    display: inline-block;
+    width: 150px;
+}
+header p {
+    float: right;
+}
+header p span {
+    position: absolute;
+    left: -9999999px;
+    /* font-size: 0; */
+}
+
+/* 메인비주얼 .main_visual */
+.main_visual {
+    height: 500px;
+    background-color: royalblue;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+.main_visual div {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.main_visual h2 {
+    font-size: 40px;
+}
+.main_visual p {
+    font-size: 22px;
+}
+.main_visual button {
+    width: 150px;
+    height: 40px;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+/* .cont01 */
+.cont01 {
+    width: 1200px;
+    /* background-color: sandybrown; */
+    text-align: center;
+    margin: 100px auto;
+}
+.cont01::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.cont01 h3 {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+.cont01 article {
+    float: left;
+    margin-right: 30px;
+    position: relative;
+}
+.cont01 article:last-of-type {
+    margin-right: 0;
+}
+.cont01 article p {
+    width: 250px;
+    height: 45px;
+    background-color: royalblue;
+    color: #fff;
+    border-radius: 5px;
+    line-height: 45px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s linear;
+}
+.cont01 article:hover p {
+    background-color: #fff;
+    color: royalblue;
+}
+
+/* .cont02 */
+.cont02 {
+    height: 300px;
+    background-color: #ccc;
+    position: relative;
+}
+.cont02 div {
+    width: 380px;
+    background-color: royalblue;
+    border-radius: 5px;
+    text-align: center;
+    padding: 40px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.cont02 div p i {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.cont02 div p span {
+    font-size: 0;
+}
+.cont02 div dl dt {
+    font-size: 25px;
+}
+
+/* footer */
+footer {
+    background-color: #333;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    padding: 50px 0;
+}

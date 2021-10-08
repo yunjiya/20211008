@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+div {display: none;}
+
+/* 뷰포트 1280px 이상 */
+@media screen and (min-width:1280px) {
+    body {background-color: aquamarine;}
+    .desktop {display: block;}
+}
+
+/* 뷰포트 1024px이상 ~ 1279px이하 */
+@media screen and (min-width:1024px) and (max-width:1279px) {
+    body {background-color: plum;}
+    .tablet_01 {display: block;}
+}
+
+/* 뷰포트 768px이상 ~ 1023px이하 */
+@media screen and (min-width:768px) and (max-width:1023px) {
+    body {background-color: purple;}
+    .tablet_02 {display: block;}
+}
+
+/* 뷰포트 767px 이하 */
+@media screen and (max-width:767px) {
+    body {background-color: royalblue;}
+    .mobile {display: block;}
+}

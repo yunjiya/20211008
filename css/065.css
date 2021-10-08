@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+header {
+    width: 1200px;
+    height: 70px;
+    line-height: 70px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+}
+header h1 {
+    position: absolute;
+    left: 0;
+}
+header ul li {
+    display: inline-block;
+    padding: 0 45px;
+}
+header a i {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.main_visual {
+    width: 100%;
+    background-color: dodgerblue;
+    text-align: center;
+}
+.main_visual div {
+    color: #fff;
+    padding: 160px 0;
+}
+.main_visual div dl dt {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.main_visual div dl dd {
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+.main_visual div p {
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    color: dodgerblue;
+    font-size: 16px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.cont01 {
+    width: 1200px;
+    margin: 100px auto;
+    text-align: center;
+}
+.cont01::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.cont01 h3 {
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+.cont01 article {
+    width: 380px;
+    height: 380px;
+    margin: 0 10px;
+    float: left;
+    position: relative;
+}
+.cont01 article:hover p {
+    color: dodgerblue;
+    background-color: #fff;
+}
+.cont01 article a p {
+    width: 250px;
+    height: 42px;
+    line-height: 42px;
+    color: #fff;
+    background-color: dodgerblue;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    bottom: 45%;
+    transform: translate(-50%);
+    transition: .5s ease-in-out;
+}
+
+.cont02 {
+    width: 100%;
+    background-color: lightgray;
+    text-align: center;
+    padding: 30px 0;
+}
+.cont02 article {
+    width: 300px;
+    color: #fff;
+    background-color: dodgerblue;
+    border: 40px solid dodgerblue;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+.cont02 article i {
+    font-size: 40px;
+    margin-bottom: 18px;
+}
+.cont02 article dl dt {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
